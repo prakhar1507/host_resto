@@ -100,13 +100,13 @@ def input_image_setup(uploaded_file):
 
 
 
-tab1, tab2,tab3 = st.tabs(['tab1', 'tab2','tab3'])
+tab1, tab2,tab3 = st.tabs(['Restaurents', 'Cuisine','Cuisine reviews'])
 
 with tab1:
     st.title("Restaurant Recommendation System")
 
     # Dropdown for cuisine types with search functionality
-    user_rest = st.selectbox("Enter preferred cuisine type:", df['Restaurent name'].unique(), key="tab1_cuisine")
+    user_rest = st.selectbox("Enter preferred Restaurent:", df['Restaurent name'].unique(), key="tab1_cuisine")
     # Dropdown for locations
     user_location = st.selectbox("Enter location:", df['Location'].unique(), key="tab1_location")
 
